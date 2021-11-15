@@ -16,6 +16,10 @@ Simulation is split into 3 entries that correspond to the ADRB2 structural state
 
 Only Cα are kept in these structures.
 
+- active: 195 frames
+- intermediate: 467 frames
+- inactive: 139 frames
+
 ### Reference structure
 The reference structure was downloaded from the OPM database (entry id: 4LDE). This structure describes the ADRB2 receptor in the active state bound to an agonist and a nanobody. The structures from OPM database were already in a correct coordinate frame (lipid bilayer aligned onto the XY plane). Unnecessary molecular objects of the structure were removed (water, bilayer representation, lipids, cofactor, ions, ligand and nanobody).
 
