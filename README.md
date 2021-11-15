@@ -114,3 +114,7 @@ In detail, the different options are :
 - ```--overwrite```: If the output directory exists, it will be overwritten.
 
 NB: The residue synthax in ```-ra``` and ```-rh``` allows to define a range with the character '-' and to separate the ranges with the character '+'.
+ 
+## FUNDING
+This work was supported by the Agence Nationale de Recherches sur le Sida [AO 2016-2 CSS2 17252 to E.K, PhD grant to C.J.]; and the Laboratoire d’Excellence Medalis de Agence Nationale de la Recherche [ANR_10-LABX-0034 to EK].
+
