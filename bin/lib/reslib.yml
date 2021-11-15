@@ -1,0 +1,304 @@
+amino_acids:
+    # Residues in protein
+    # three_letter: one_letter
+    -
+        name: "arginine"
+        tl_code: "ARG"
+        ol_code: "R"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "histidine"
+        tl_code: "HIS"
+        ol_code: "H"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "lysine"
+        tl_code: "LYS"
+        ol_code: "K"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "aspartic acid"
+        tl_code: "ASP"
+        ol_code: "D"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "asparagine"
+        tl_code: "ASN"
+        ol_code: "N"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "glutamic acid"
+        tl_code: "GLU"
+        ol_code: "E"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "glutamine"
+        tl_code: "GLN"
+        ol_code: "Q"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "serine"
+        tl_code: "SER"
+        ol_code: "S"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "threonine"
+        tl_code: "THR"
+        ol_code: "T"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "cystein"
+        tl_code: "CYS"
+        ol_code: "C"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "selenocystein"
+        tl_code: "SEC"
+        ol_code: "U"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "glycine"
+        tl_code: "GLY"
+        ol_code: "G"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "proline"
+        tl_code: "PRO"
+        ol_code: "P"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "alanine"
+        tl_code: "ALA"
+        ol_code: "A"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "valine"
+        tl_code: "VAL"
+        ol_code: "V"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "isoleucine"
+        tl_code: "ILE"
+        ol_code: "I"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "leucine"
+        tl_code: "LEU"
+        ol_code: "L"
+        ol_ref: True
+        name_ref: True
+    -
+        name: methionine
+        tl_code: "MET"
+        ol_code: "M"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "phenylalanine"
+        tl_code: "PHE"
+        ol_code: "F"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "tyrosine"
+        tl_code: "TYR"
+        ol_code: "Y"
+        ol_ref: True
+        name_ref: True
+    -
+        name: "tryptophan"
+        tl_code: "TRP"
+        ol_code: "W"
+        ol_ref: True
+        name_ref: True
+    - # D-arginine
+        name: "D-arginine"
+        tl_code: "DAR"
+        ol_code: "R"
+        ol_ref: False
+        name_ref: False
+    - # D-histidine
+        name: "D-histidine"
+        tl_code: "DHI"
+        ol_code: "H"
+        ol_ref: False
+        name_ref: False
+    - # D-lysine
+        name: "D-lysine"
+        tl_code: "DLY"
+        ol_code: "K"
+        ol_ref: False
+        name_ref: False
+    - # D-aspartic acid
+        name: "D-aspartic acid"
+        tl_code: "DAS"
+        ol_code: "D"
+        ol_ref: False
+        name_ref: False
+    - # D-asparagine
+        name: "D-asparagine"
+        tl_code: "DSG"
+        ol_code: "N"
+        ol_ref: False
+        name_ref: False
+    - # D-glutamic acid
+        name: "D-glutamic acid"
+        tl_code: "DGL"
+        ol_code: "E"
+        ol_ref: False
+        name_ref: False
+    - # D-glutamine
+        name: "D-glutamine"
+        tl_code: "DGN"
+        ol_code: "Q"
+        ol_ref: False
+        name_ref: False
+    - # D-serine
+        name: "D-serine"
+        tl_code: "DSN"
+        ol_code: "S"
+        ol_ref: False
+        name_ref: False
+    - # D-threonine
+        name: "D-threonine"
+        tl_code: "DTH"
+        ol_code: "T"
+        ol_ref: False
+        name_ref: False
+    - # D-cystein
+        name: "D-cystein"
+        tl_code: "DCY"
+        ol_code: "C"
+        ol_ref: False
+        name_ref: False
+    # D-selenocystein is missing
+    - # D-proline
+        name: "D-proline"
+        tl_code: "DPR"
+        ol_code: "P"
+        ol_ref: False
+        name_ref: False
+    - # D-alanine
+        name: "D-alanine"
+        tl_code: "DAL"
+        ol_code: "A"
+        ol_ref: False
+        name_ref: False
+    - # D-valine
+        name: "D-valine"
+        tl_code: "DVA"
+        ol_code: "V"
+        ol_ref: False
+        name_ref: False
+    - # D-isoleucine
+        name: "D-isoleucine"
+        tl_code: "DIL"
+        ol_code: "I"
+        ol_ref: False
+        name_ref: False
+    - # D-leucine
+        name: "D-leucine"
+        tl_code: "DLE"
+        ol_code: "L"
+        ol_ref: False
+        name_ref: False
+    - # D-methionine
+        name: D-methionine
+        tl_code: "MED"
+        ol_code: "M"
+        ol_ref: False
+        name_ref: False
+    - # D-phenylalanine
+        name: "D-phenylalanine"
+        tl_code: "DPN"
+        ol_code: "F"
+        ol_ref: False
+        name_ref: False
+    - # D-tyrosine
+        name: "D-tyrosine"
+        tl_code: "DTY"
+        ol_code: "Y"
+        ol_ref: False
+        name_ref: False
+    - # D-tryptophan
+        name: "D-tryptophan"
+        tl_code: "DTR"
+        ol_code: "W"
+        ol_ref: False
+        name_ref: False
+    - # Any
+        name: "any" # Don't change it otherwise the program will crash
+        tl_code: "UNK"
+        ol_code: "X"
+        ol_ref: True
+        name_ref: True
+    - # Gap
+        name: "gap" # Don't change it otherwise the program will crash
+        tl_code: "GAP"
+        ol_code: "-"
+        ol_ref: True
+        name_ref: True
+    - # Cystein involved in a SS bridge
+        name: "cystein"
+        tl_code: "CYX"
+        ol_code: "C"
+        ol_ref: False
+        name_ref: False
+    - # Protonated aspartic acid
+        name: "aspartic acid"
+        tl_code: "ASH"
+        ol_code: "D"
+        ol_ref: False
+        name_ref: False
+    - # Protonated glutamic acid
+        name: "glutamic acid"
+        tl_code: "GLH"
+        ol_code: "E"
+        ol_ref: False
+        name_ref: False
+    - # Histidine protonated at epsilon position
+        name: "histidine"
+        tl_code: "HIE"
+        ol_code: "H"
+        ol_ref: False
+        name_ref: False
+    - # Histidine protonated at delta position
+        name: "histidine"
+        tl_code: "HID"
+        ol_code: "H"
+        ol_ref: False
+        name_ref: False
+    - # Histidine protonated at both positions
+        name: "histidine"
+        tl_code: "HIP"
+        ol_code: "H"
+        ol_ref: False
+        name_ref: False
+    - # Sulfotyrosine
+        name: "sulfotyrosine"
+        tl_code: "TYS"
+        ol_code: "Y"
+        ol_ref: False
+        name_ref: True
+    - # Amide cap
+        name: "amide"
+        tl_code: "NME"
+        ol_code: "X"
+        ol_ref: False
+        name_ref: True

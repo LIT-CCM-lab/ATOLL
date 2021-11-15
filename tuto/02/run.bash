@@ -1,0 +1,1 @@
+/projects/storage/cjacquemard/miniconda3/envs/atoll-soft/bin/python3.7 ../../bin/atoll.py atoll -ref 4lde_clean.pdb -seq sequences.sto -out results -rn position -inf info.tsv -ra 16-31+51-67+86-103+132-148+177-194+255-269+289-302 -rh 10-38+46-74+82-113+126-147+175-203+246-276+284-302 --overwrite

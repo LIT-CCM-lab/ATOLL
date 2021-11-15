@@ -1,0 +1,27 @@
+Entry	Sequence name	Group	Type	Path	Color
+4DW1	P2X4_ZEBRAFISH	open ATP-bound	single	structures/4DW1.pdb	tab:green
+5SVK	P2X3_HUMAN	open ATP-bound	single	structures/5SVK.pdb	tab:green
+6AH4	P2X3_HUMAN	open ATP-bound	single	structures/6AH4.pdb	tab:green
+6AH5	P2X3_HUMAN	open ATP-bound	single	structures/6AH5.pdb	tab:green
+5F1C	amP2X_GULFCOASTTICK	open ATP-bound	single	structures/5F1C.pdb	tab:green
+6U9W	P2X7_RAT	open ATP-bound	single	structures/6U9W.pdb	tab:green
+5SVL	P2X3_HUMAN	desensitized	single	structures/5SVL.pdb	tab:orange
+5SVM	P2X3_HUMAN	desensitized	single	structures/5SVM.pdb	tab:orange
+5SVP	P2X3_HUMAN	desensitized	single	structures/5SVP.pdb	tab:orange
+3H9V	P2X4_ZEBRAFISH	closed unliganded	single	structures/3H9V.pdb	tab:red
+3I5D	P2X4_ZEBRAFISH	closed unliganded	single	structures/3I5D.pdb	tab:red
+4DW0	P2X4_ZEBRAFISH	closed unliganded	single	structures/4DW0.pdb	tab:red
+5U1L	P2X7_GIANTPANDA	closed unliganded	single	structures/5U1L.pdb	tab:red
+5SVJ	P2X3_HUMAN	closed unliganded	single	structures/5SVJ.pdb	tab:red
+6U9V	P2X7_RAT	closed unliganded	single	structures/6U9V.pdb	tab:red
+5SVQ	P2X3_HUMAN	closed liganded	single	structures/5SVQ.pdb	tab:purple
+5XW6	P2X7_CHICKEN	closed liganded	single	structures/5XW6.pdb	tab:purple
+5SVR	P2X3_HUMAN	closed liganded	single	structures/5SVR.pdb	tab:purple
+5U1U	P2X7_GIANTPANDA	closed liganded	single	structures/5U1U.pdb	tab:purple
+5U1V	P2X7_GIANTPANDA	closed liganded	single	structures/5U1V.pdb	tab:purple
+5U1W	P2X7_GIANTPANDA	closed liganded	single	structures/5U1W.pdb	tab:purple
+5U1X	P2X7_GIANTPANDA	closed liganded	single	structures/5U1X.pdb	tab:purple
+5U1Y	P2X7_GIANTPANDA	closed liganded	single	structures/5U1Y.pdb	tab:purple
+5U2H	P2X7_GIANTPANDA	closed liganded	single	structures/5U2H.pdb	tab:purple
+5WZY	P2X4_ZEBRAFISH	closed liganded	single	structures/5WZY.pdb	tab:purple
+5YVE	P2X3_HUMAN	closed liganded	single	structures/5YVE.pdb	tab:purple

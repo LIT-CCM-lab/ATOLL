@@ -1,0 +1,4 @@
+Entry	Sequence name	Group	Type	Path	Color
+inactive	adrb2_human	Inactive	multi	inputs/inactive	tab:red
+intermediate	adrb2_human	Intermediate	multi	inputs/intermediate	tab:orange
+active	adrb2_human	Active	multi	inputs/active	tab:green

@@ -1,0 +1,1 @@
+/projects/storage/cjacquemard/miniconda3/envs/atoll-soft/bin/python3.7 ../../bin/atoll.py atoll -ref reference.pdb -inf info.tsv -out results -rn resid -rh 26-57+64-89+98-131+142-165+187-223+228-259+269-300 --overwrite
