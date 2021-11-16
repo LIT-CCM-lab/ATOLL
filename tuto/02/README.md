@@ -1,6 +1,6 @@
 # Tutorial 02
 ## Overview
-This example described the deactivation simulation produced by all-atom classical molecular dynamic of a β2-adrenergic receptor (ADRB2). The structure of this G protein-coupled receptor is initially in an active state. During the simulation, conformational changes occur passing the receptor from an active, to an intermediate and then to an inactive state. The most remarkable changes are located at the bottom of the TM6 that shift inward the receptor center and the bottom of TM7 that slightly shift outward the receptor center.
+We are going to analyse the deactivation simulation produced by all-atom classical molecular dynamic of a β2-adrenergic receptor (ADRB2). The starting structure of this G protein-coupled receptor is in the active state. During the simulation, the receptor state move to an intermediate and then to the inactive state. The most remarkable structural changes involve the lower part of TM6 that shifts inward the receptor center and the lower part of TM7 that slightly shifts outward the receptor center.
 
 This simulation is described in the following article:
 -   Dror _et al._ Activation mechanism of the β2-adrenergic receptor. _PNAS_. **2011**, 61(9), 18684-18689. DOI: [10.1073/pnas.1110499108](https://www.pnas.org/content/108/46/18684.long)
@@ -8,13 +8,13 @@ This simulation is described in the following article:
 ## Aim
 The aim of this tutorial is to evaluate the conformational changes of ADRB2 during its deactivation.
 
-The helix ends of the 7 CCR5 helices will be superimposed and will be projected with ATOLL.
+The helix ends of the 7 helices will be superimposed and will be projected with ATOLL.
 
 ## Inputs
 ### Entries
-Simulation is split into 3 entries that correspond to the ADRB2 structural state (active, intermediate and inactive). Dror _et al._ proposed the TM6-TM3 distance and the NPxxY region RMSD to inactive state as descriptors. 
+Simulation is divided into 3 entries that correspond to the ADRB2 structural state (active, intermediate and inactive). Dror _et al._ proposed the TM6-TM3 distance and the NPxxY region RMSD to distinguish the three states. 
 
-Only Cα are kept in these structures.
+Only Cα are represented in these structures.
 
 - active: 195 frames
 - intermediate: 467 frames
@@ -24,7 +24,7 @@ Only Cα are kept in these structures.
 The reference structure was downloaded from the OPM database (entry id: 4LDE). This structure describes the ADRB2 receptor in the active state bound to an agonist and a nanobody. The structures from OPM database were already in a correct coordinate frame (lipid bilayer aligned onto the XY plane). Unnecessary molecular objects of the structure were removed (water, bilayer representation, lipids, cofactor, ions, ligand and nanobody).
 
 ### Sequence alignment
-The studied protein is ADRB2 in the three entries. In the sequence alignment file (sequences.sto) the ADRB2 full sequence from the Uniprot database (Uniprot AC: P07550) is given and is set as reference. Due to mutation in the ADRB2 structures, the amino acid sequence of these structures was aligned onto the native one with MOE 2019.01. The aligned structure sequence was triplicated for each structural state. It's noteworthy that it is not necessary to give a sequence for each entry (see tutorial 01).
+In the sequence alignment file (sequences.sto) the ADRB2 full sequence from the Uniprot database (Uniprot AC: P07550) is given and is set as reference. Due to mutation in the ADRB2 structures, the amino acid sequence of these structures was aligned onto the native one with MOE 2019.01. The aligned structure sequence was triplicated for each structural state. It's noteworthy that it is not necessary to give a sequence for each entry (see tutorial 01).
 
 ### Residues used for structural superimposition
 The superimposition is done during the ATOLL procedure.
