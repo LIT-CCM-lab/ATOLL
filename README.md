@@ -29,7 +29,7 @@ python sanitize bin/atoll.py --structure <structure_file_to_process> --output <t
 The supported file formats and corresponding extensions are :
 - *Static*
     - Protein Data Bank (PDB): .pdb
-    - SYBYLL (MOL2): .mol2
+    - SYBYL (MOL2): .mol2
 - *Multiple*
     - Topology
         - AMBER TOP: .prmtop, .top, parm7
