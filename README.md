@@ -50,12 +50,12 @@ For molecular dynamics trajectories, the topology file and coordinate file(s) of
 
 Depending on the *static* or *multiple* nature of the file, ATOLL uses different representations (see publication).
 
-*Important* : If the structure files contain proteins which differ in their sequence and / or in the numbering of residues, a sequence alignment file must be provided too(see 'Sequence alignment file' below).
+*Important* : If the structure files contain proteins which differ in their sequence and / or in the numbering of residues, a sequence alignment file must be provided too (see 'Sequence alignment file' below).
 
 #### Reference file
 The reference structure defines the correct orientation of the protein in the membrane, which is *XY* plane.
 
-There are two ways of preparing the reference structure in the appropriate coordinate frame: using with your favorite software for protein display and edition; or downloading a structure from the structural database of orientations of proteins in membrane [OPM](https://opm.phar.umich.edu/) and to specify to ATOLL the residues used for the alignment.
+There are three ways of preparing the reference structure in the appropriate coordinate frame: using with your favorite software for protein display and edition; using ATOLL webserver (https://atoll.drugdesign.unistra.fr); or downloading a structure from the structural database of orientations of proteins in membrane [OPM](https://opm.phar.umich.edu/) and to specify to ATOLL the residues used for the alignment.
 Note that if there are several structures in the reference file, ATOLL only takes into account the first one, the following ones being ignored. The supported file formats are those of *static* structures.
 
 The reference structure is also used to define the projected TMs. If the reference structure is different from the input proteins, its sequence must be in the alignment file (see 'Sequence alignment file' below).
