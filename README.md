@@ -55,15 +55,15 @@ Depending on the *static* or *multiple* nature of the file, ATOLL uses different
 #### Reference file
 The reference structure defines the correct orientation of the protein in the membrane, which is *XY* plane.
 
-There are three ways of preparing the reference structure in the appropriate coordinate frame: using with your favorite software for protein display and edition; using ATOLL webserver (https://atoll.drugdesign.unistra.fr); or downloading a structure from the structural database of orientations of proteins in membrane [OPM](https://opm.phar.umich.edu/) and to specify to ATOLL the residues used for the alignment.
+There are three ways of preparing the reference structure in the appropriate coordinate frame: using with your favorite software for protein display and edition; using ATOLL webserver (https://atoll.drugdesign.unistra.fr); or downloading a structure from the structural database of orientations of proteins in membrane [OPM](https://opm.phar.umich.edu/).
 Note that if there are several structures in the reference file, ATOLL only takes into account the first one, the following ones being ignored. The supported file formats are those of *static* structures.
 
-The reference structure is also used to define the projected TMs. If the reference structure is different from the input proteins, its sequence must be in the alignment file (see 'Sequence alignment file' below).
+The reference structure is also used to define the projected TMs. If the reference structure is different from the input proteins, its sequence must be given in the alignment file (see 'Sequence alignment file' below).
 
-All the input structures have to be be superimposed onto the TMs of the reference structure. 
+All the input structures must be superimposed onto the TMs of the reference structure. 
 
 #### Sequence alignment file
-A multiple sequence alignement is requiered if the protein sequence is not strictly conserved in the reference and all the entries, i.e., if there are differences in the sequence length and composition (e.g., missing residues), or if residue numbering is inconsistent.
+A multiple sequence alignement is requiered if the protein sequence is not strictly conserved between the reference and all the entries, i.e., if there are differences in the sequence length and composition (e.g., missing residues), or if residue numbering is inconsistent.
 
 The stockholm file format (.sto or .stk) is the only supported format.
 Format developed by E Sonnhammers (https://sonnhammer.sbc.su.se/Stockholm.html)
@@ -86,13 +86,13 @@ P2X3_HUMAN/1-57           ----GSRADFFTYETPKVIVVKSWTIGIINRVVQLLIISYFVGWVFLHEKAYQV
 ```
 
 #### Annotation file
-The annotation file is mandantory. It defines ATOLL parameters required for structure file analyses. Data is formatted as a table in CSV (comma separator) or TSV (tab separator) format, and comprising 6 fields:
+The annotation file is mandantory. It defines ATOLL parameters. Data is formatted as a table in CSV (comma separator) or TSV (tab separator) format, and comprising 6 fields:
 - "Entry": unique label for each entry.
 - "Sequence name": associated label in the sequence alignment file.
 - "Group": define a group for several entries.
 - "Type": specifies whether it is a *static* or *multiple* entry.
 - "Path": path of the entry. Must be a file if the entry is *static* and a directory if the entry is *multiple*.
-- "Color": entry color when generating the chart. For a full list of colors see the following [link](https://matplotlib.org/stable/gallery/color/named_colors.html) 
+- "Color": entry color when generating the images. For a full list of colors see the following [link](https://matplotlib.org/stable/gallery/color/named_colors.html) 
 
 Each *static* structure and each directory with *multiple* structures is considered as an entry.
 
