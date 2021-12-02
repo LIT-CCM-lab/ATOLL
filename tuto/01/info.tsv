@@ -1,4 +1,4 @@
 Entry	Sequence name	Group	Type	Path	Color
-25	ccr5_human	#25	multi	inputs/25	tab:blue
-34	ccr5_human	#34	multi	inputs/34	tab:orange
-free	ccr5_human	Unliganded	single	inputs/free.pdb	gray
+25	ccr5_human	#25	multi	inputs/25	#1f77b4
+34	ccr5_human	#34	multi	inputs/34	#ff7f0e
+free	ccr5_human	Unliganded	single	inputs/free.pdb	#e377c2
