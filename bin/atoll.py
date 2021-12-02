@@ -18,19 +18,6 @@ __status__ = 'InDev'
 prog_dir = os.path.realpath(os.path.dirname(__file__))
 logger = init.get_logger(__file__)
 
-'''
-    ..TODO: Add method to check if selected residues for analysis exists in structures
-    ..TODO: When more than 1 topology files are encountered the script should raise an error but it doesn't !!!
-    ..TODO: Correct helix radius. It doesn't correspond on plot!
-    ..TODO: Add multiple reference handling
-    ..TODO: Create log file with alignments and residue numbering
-    ..TODO: Problem with MOL2 file residue parsing
-    ..TODO: Write sequence alignments
-    ..TODO: Handle gap in reference sequence after alignment
-    ..TODO: Create class to handle sequence formatting
-    ..TODO: Print warning when sequence identity is to low
-'''
-
 class Atoll:
 	def __init__(self):
 		self.reference = None
@@ -197,7 +184,6 @@ class Atoll:
 	def set_domain(self, frame):
 		logger.info(f'Setting domains for {frame.label}...')
 		for domain_name, intervals in self.domains.items():
-			# logger.info(f'{domain_name}')
 			frame.domains.set_group_intervals(domain_name, intervals, self.resnum, prefix='TM')
 
 
@@ -215,10 +201,6 @@ class RefNum(Atoll):
 
 			sequence_aligner = sequence.SequenceAligner()
 			new_sequence, new_protein = sequence_aligner.reference_renumber(self.reference)
-
-			# self.reference.structure_sequence.left_strip()
-			# sequence_aligner = sequence.SequenceAligner()
-			# sequence_aligner.align_structure(self.reference, change_index=False)
 		else:
 			self.reference = self.load_reference(args.reference_filepath, fill_empty=False, position_shift=False)
 			self.reference.structure_sequence.left_strip()
@@ -235,33 +217,10 @@ class RefNum(Atoll):
 		if args.output_reference_filepath:
 			new_protein.write(args.output_reference_filepath)
 
-		# self.reference.renumber_protein_residues('position')
-		# out_filepath = os.path.join(args.output_dirpath, '{}_position.mol2'.format(args.prefix))
-		# self.reference.protein.write(out_filepath)
-
-		# self.reference.renumber_protein_residues('resid')
-		# out_filepath = os.path.join(args.output_dirpath, '{}_resid.mol2'.format(args.prefix))
-		# self.reference.protein.write(out_filepath)
-
 
 class CheckFile(Atoll):
 	def __init__(self):
 		pass
-
-	# @classmethod
-	# def load_structures(cls, structure_filepathes):
-	# 	structures = []
-	# 	for path in structure_filepathes:
-	# 		fileprefix, fileext = os.path.splitext(os.path.basename(path))
-
-	# 		if os.path.isfile(path):
-	# 			structure = frame.Static(None, path)
-	# 		else:
-	# 			structure = frame.Multiple(None, path)
-
-	# 		structures.append(structure)
-
-	# 	return structures
 
 	@staticmethod
 	def format_error(error):
@@ -358,13 +317,7 @@ class Sanitize(Atoll):
 
 def main(args):
 	atoll = Atoll()
-	# try:
 	return atoll.load_from_cli(args)
-	# except BaseException as error:
-		# msg = "An unexpected error occured! The problem may be due to residue numbering inconsistency. Check careful your structures and the sequence alignment."
-		# logger.critical(msg)
-
-		# return 1
 
 
 def refnum(args):
@@ -392,8 +345,6 @@ if __name__ == '__main__':
 	atoll_parser = subparsers.add_parser('atoll', help='')
 
 	input_group = atoll_parser.add_argument_group('input')
-	# input_group.add_argument('--input', '-in', nargs='+', required=True, dest='input_pathes',
-	# 	help='Input structure files to analyze.', metavar='PATHES')
 	input_group.add_argument('--reference', '-ref', required=True, dest='reference_filepath',
 		help='Reference structure file.', metavar='FILEPATH')
 	input_group.add_argument('--sequence', '-seq', dest='sequence_filepath',
@@ -442,7 +393,7 @@ if __name__ == '__main__':
 
 	atoll_parser.set_defaults(func=main)
 
-	refnum_parser = subparsers.add_parser('refnum', help='')
+	refnum_parser = subparsers.add_parser('refnum', help='Renumber the residue in a structure file based on sequence alignment file.')
 	refnum_parser.add_argument('--reference', '-ref', required=True, dest='reference_filepath',
 			help='Reference structure file.', metavar='FILEPATH')
 	refnum_parser.add_argument('--sequence', '-seq', dest='sequence_filepath',
@@ -454,7 +405,7 @@ if __name__ == '__main__':
 
 	refnum_parser.set_defaults(func=refnum)
 
-	checkfile_parser = subparsers.add_parser('checkfile', help='')
+	checkfile_parser = subparsers.add_parser('checkfile', help='Module to check if input files are readable by ATOLL.')
 	checkfile_parser.add_argument('--reference', '-ref', dest='reference_filepath',
 		help='Reference structure file.', metavar='FILEPATH')
 	checkfile_parser.add_argument('--sequence', '-seq', dest='sequence_filepath',
@@ -468,7 +419,7 @@ if __name__ == '__main__':
 
 	checkfile_parser.set_defaults(func=checkfile)
 
-	mergechains_parser = subparsers.add_parser('sanitize', help='')
+	mergechains_parser = subparsers.add_parser('sanitize', help='Clean a input structure to suit ATOLL procedure.')
 	mergechains_parser.add_argument('--structure', '-s', dest='structure_filepath',
 		help='Structure file describing only ONE conformer.', metavar='FILEPATH')
 	mergechains_parser.add_argument('--output', '-o', dest='output_filepath',
